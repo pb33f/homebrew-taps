@@ -5,20 +5,20 @@
 class Wiretap < Formula
   desc "The worlds coolest OpenAPI compliance dev HTTP proxy"
   homepage "https://pb33f.io/wiretap"
-  version "0.0.10"
+  version "0.0.11"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/pb33f/wiretap/releases/download/v0.0.10/wiretap_0.0.10_darwin_amd64.tar.gz"
-      sha256 "642c0c0d8957ee0f7be7833295c5dc6621362b943ab2b3244b17389b1aa9e8f8"
+      url "https://github.com/pb33f/wiretap/releases/download/v0.0.11/wiretap_0.0.11_darwin_amd64.tar.gz"
+      sha256 "821d0a6fb574e681fbfe5ddfff8e3e42cb5c926233b8f92ebc8bf1e7925f70e8"
 
       def install
         bin.install "wiretap"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/pb33f/wiretap/releases/download/v0.0.10/wiretap_0.0.10_darwin_arm64.tar.gz"
-      sha256 "ff7295f0b822636d3df3366e105a7a2419a56696d09feb20aa4b04cfeb9d524a"
+      url "https://github.com/pb33f/wiretap/releases/download/v0.0.11/wiretap_0.0.11_darwin_arm64.tar.gz"
+      sha256 "d9ea72ddd078cc1c4a52c4527527bc7769380845f10095fb9ef67a57f229dc9b"
 
       def install
         bin.install "wiretap"
@@ -28,16 +28,16 @@ class Wiretap < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pb33f/wiretap/releases/download/v0.0.10/wiretap_0.0.10_linux_arm64.tar.gz"
-      sha256 "a4df9ac79e7e30a661c42799a7ededa427288ff327e7fa83eb10e7d18740c22c"
+      url "https://github.com/pb33f/wiretap/releases/download/v0.0.11/wiretap_0.0.11_linux_arm64.tar.gz"
+      sha256 "18d773266690b1e7a0722b1106a78a564f3ef23f55154707d7bff78508ecc0e5"
 
       def install
         bin.install "wiretap"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/pb33f/wiretap/releases/download/v0.0.10/wiretap_0.0.10_linux_amd64.tar.gz"
-      sha256 "52e457345daa5424b3fe2a5b49569a46a5786d01a86bbbb1b1cc8258e7866015"
+      url "https://github.com/pb33f/wiretap/releases/download/v0.0.11/wiretap_0.0.11_linux_amd64.tar.gz"
+      sha256 "5c00bfc27de8d4fa6981d98c6fcbb2d993f0392960f0acf82c113b0c85e23e43"
 
       def install
         bin.install "wiretap"
