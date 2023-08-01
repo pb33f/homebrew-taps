@@ -5,20 +5,20 @@
 class Wiretap < Formula
   desc "The worlds coolest OpenAPI compliance dev HTTP proxy"
   homepage "https://pb33f.io/wiretap"
-  version "0.0.26"
+  version "0.0.27"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/pb33f/wiretap/releases/download/v0.0.26/wiretap_0.0.26_darwin_x86_64.tar.gz"
-      sha256 "7b367a11597b698f1b1464b3943b8cd70b9e160dcabfd1ab9935bac7a37d4454"
+    if Hardware::CPU.arm?
+      url "https://github.com/pb33f/wiretap/releases/download/v0.0.27/wiretap_0.0.27_darwin_arm64.tar.gz"
+      sha256 "78b1fb38c1acb836443e6e1bdd8f0a94589fda635826b1fd1f060a134f2d183e"
 
       def install
         bin.install "wiretap"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/pb33f/wiretap/releases/download/v0.0.26/wiretap_0.0.26_darwin_arm64.tar.gz"
-      sha256 "7147f54e713bc9b8e08cb3b9cc605f1821ce37c2cc2fcdb832d806a04c74a37a"
+    if Hardware::CPU.intel?
+      url "https://github.com/pb33f/wiretap/releases/download/v0.0.27/wiretap_0.0.27_darwin_x86_64.tar.gz"
+      sha256 "a5cd1a0654c4adcdc0add4ce15c77474b526699f01f1f2c49329358e91054dbb"
 
       def install
         bin.install "wiretap"
@@ -28,16 +28,16 @@ class Wiretap < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/pb33f/wiretap/releases/download/v0.0.26/wiretap_0.0.26_linux_x86_64.tar.gz"
-      sha256 "4ca576e8de15fe617c01d4b8f805e904f9a2b17703ef0ca4f4275bcb1e26c280"
+      url "https://github.com/pb33f/wiretap/releases/download/v0.0.27/wiretap_0.0.27_linux_x86_64.tar.gz"
+      sha256 "ade2632b582341541b10b6680067b3b355b9e1a21d5c2ae8bf311ec08aa82935"
 
       def install
         bin.install "wiretap"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pb33f/wiretap/releases/download/v0.0.26/wiretap_0.0.26_linux_arm64.tar.gz"
-      sha256 "4f731f35f1cc426ebf6c812ab82009e7da63ce14283576d9ae4155780433199b"
+      url "https://github.com/pb33f/wiretap/releases/download/v0.0.27/wiretap_0.0.27_linux_arm64.tar.gz"
+      sha256 "79a0f2ea74ff05cfb5580fcbc646503c3e98fd22ac1014e1fef8d241f6b6c374"
 
       def install
         bin.install "wiretap"
