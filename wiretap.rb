@@ -5,20 +5,20 @@
 class Wiretap < Formula
   desc "The worlds coolest OpenAPI compliance dev HTTP proxy"
   homepage "https://pb33f.io/wiretap"
-  version "0.4.5"
+  version "0.4.6"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/pb33f/wiretap/releases/download/v0.4.5/wiretap_0.4.5_darwin_x86_64.tar.gz"
-      sha256 "fdaa3d56ea866bfef5ac40619c2b4559e89ccff0196c15b8df9f8bb9111ddc92"
+      url "https://github.com/pb33f/wiretap/releases/download/v0.4.6/wiretap_0.4.6_darwin_x86_64.tar.gz"
+      sha256 "8f72aecaf48e4d687dc3befbbb9b83e4dc70185209a005798d0921da228d60ce"
 
       def install
         bin.install "wiretap"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/pb33f/wiretap/releases/download/v0.4.5/wiretap_0.4.5_darwin_arm64.tar.gz"
-      sha256 "35cc371e0e1cb66086e73782c745958f61e23acb9ee075dd512df9dd7859070a"
+      url "https://github.com/pb33f/wiretap/releases/download/v0.4.6/wiretap_0.4.6_darwin_arm64.tar.gz"
+      sha256 "e6df90efdfc7a5a9eeffca5282c47b0ed326bba71c10483db6078d1617374621"
 
       def install
         bin.install "wiretap"
@@ -27,16 +27,16 @@ class Wiretap < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/pb33f/wiretap/releases/download/v0.4.5/wiretap_0.4.5_linux_x86_64.tar.gz"
-      sha256 "bc8f069438c8b44c218028629c1d43f660e30ae7ff6f2aef6cca5b390b3fb6c0"
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/pb33f/wiretap/releases/download/v0.4.6/wiretap_0.4.6_linux_x86_64.tar.gz"
+      sha256 "e460d7e68afb318fb8cf5fe231677e3b4a6ac74b9e99e96477f0cfba24b8e6a4"
       def install
         bin.install "wiretap"
       end
     end
-    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/pb33f/wiretap/releases/download/v0.4.5/wiretap_0.4.5_linux_arm64.tar.gz"
-      sha256 "a3b60f2e9398c47101489ed1b9e13659c319f14618a80837d215ec09c95e18f3"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/pb33f/wiretap/releases/download/v0.4.6/wiretap_0.4.6_linux_arm64.tar.gz"
+      sha256 "050f3042567bd71cd2ffc9428e41bb8fe57333cb73163b46e5057c9861d2faf6"
       def install
         bin.install "wiretap"
       end
