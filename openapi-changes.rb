@@ -5,20 +5,20 @@
 class OpenapiChanges < Formula
   desc "The worlds sexiest OpenAPI diffing and change detection engine"
   homepage "https://pb33f.io/openapi-changes"
-  version "0.0.95"
+  version "0.0.96"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/pb33f/openapi-changes/releases/download/v0.0.95/openapi-changes_0.0.95_darwin_x86_64.tar.gz"
-      sha256 "7f3dd4907cc2fb5c7138b7cceaa499ca811b6f6fa7d97c932beebd8aba7deb6f"
+      url "https://github.com/pb33f/openapi-changes/releases/download/v0.0.96/openapi-changes_0.0.96_darwin_x86_64.tar.gz"
+      sha256 "1b6858f86163b757d8fba81fb1bac7931702a224021419422f503eb377e3ccac"
 
       define_method(:install) do
         bin.install "openapi-changes"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/pb33f/openapi-changes/releases/download/v0.0.95/openapi-changes_0.0.95_darwin_arm64.tar.gz"
-      sha256 "4b82e883d2eaca824f34b7acd41bdd0189c0721a86153f3790e17ff083b1bd38"
+      url "https://github.com/pb33f/openapi-changes/releases/download/v0.0.96/openapi-changes_0.0.96_darwin_arm64.tar.gz"
+      sha256 "4385d75e736acaa676c00d68b5eb024d5fd6d85902d50795e308c617f6859eae"
 
       define_method(:install) do
         bin.install "openapi-changes"
@@ -28,15 +28,15 @@ class OpenapiChanges < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pb33f/openapi-changes/releases/download/v0.0.95/openapi-changes_0.0.95_linux_x86_64.tar.gz"
-      sha256 "4c29c6adaa9afc333da277ae462213e3e21290bee1683536da0ced15c3d303a1"
+      url "https://github.com/pb33f/openapi-changes/releases/download/v0.0.96/openapi-changes_0.0.96_linux_x86_64.tar.gz"
+      sha256 "a9cdcae2f0e99f7c537e76318b3eebe0b52d26bce7a01940abbe4eae9ff283e6"
       define_method(:install) do
         bin.install "openapi-changes"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pb33f/openapi-changes/releases/download/v0.0.95/openapi-changes_0.0.95_linux_arm64.tar.gz"
-      sha256 "fdc75025e7d678c90a6947462acd31814424781b0f178e16be5ec84258c2e68b"
+      url "https://github.com/pb33f/openapi-changes/releases/download/v0.0.96/openapi-changes_0.0.96_linux_arm64.tar.gz"
+      sha256 "8ab302b1567eb237ca1cf97877e100ca7c7cbd4f0ac8f985c178ef8ccaf2e05e"
       define_method(:install) do
         bin.install "openapi-changes"
       end
