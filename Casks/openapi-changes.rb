@@ -32,6 +32,10 @@ cask "openapi-changes" do
     skip "Auto-generated on release."
   end
 
+  postflight do
+    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/openapi-changes"]
+  end
+
   binary "openapi-changes"
 
   # No zap stanza required
