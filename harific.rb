@@ -5,20 +5,20 @@
 class Harific < Formula
   desc "Lightning-fast HAR file viewer and analysis tool with TUI and mock server"
   homepage "https://pb33f.io/harific"
-  version "0.0.5"
+  version "0.0.6"
 
   on_macos do
     on_intel do
-      url "https://github.com/pb33f/harific/releases/download/v0.0.5/harific_0.0.5_darwin_x86_64.tar.gz"
-      sha256 "a5f04d92e9ddad556b0f805224032091d48979ad813e6573f342da19ee92f137"
+      url "https://github.com/pb33f/harific/releases/download/v0.0.6/harific_0.0.6_darwin_x86_64.tar.gz"
+      sha256 "67ddd8b4873bfe4118fdd666847cf6794dfe8f2b984e3e779c1baa2070f09f3a"
 
       def install
         bin.install "harific"
       end
     end
     on_arm do
-      url "https://github.com/pb33f/harific/releases/download/v0.0.5/harific_0.0.5_darwin_arm64.tar.gz"
-      sha256 "9a140b0a58778d2bd683c8ca21b518bf70cfc4e010c03d80df927cfac82cf39a"
+      url "https://github.com/pb33f/harific/releases/download/v0.0.6/harific_0.0.6_darwin_arm64.tar.gz"
+      sha256 "da72881193b0b1a277620cecd53b2c6d06321a91cbf84ad9e1e960b80364fb54"
 
       def install
         bin.install "harific"
@@ -29,8 +29,8 @@ class Harific < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/pb33f/harific/releases/download/v0.0.5/harific_0.0.5_linux_x86_64.tar.gz"
-        sha256 "85e704fd79e13e7efcbc4fae708f8429bdf35543de0c947971718c22ae0b745b"
+        url "https://github.com/pb33f/harific/releases/download/v0.0.6/harific_0.0.6_linux_x86_64.tar.gz"
+        sha256 "53102a1b6513ca5e9e996750a1b15d64e0688bb73914cef2fbcb47e70a090129"
 
         def install
           bin.install "harific"
@@ -39,8 +39,8 @@ class Harific < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/pb33f/harific/releases/download/v0.0.5/harific_0.0.5_linux_arm64.tar.gz"
-        sha256 "731b29901e8133b9374b1228dc40d01c1c99d8c1bc1734862400233bef3eb388"
+        url "https://github.com/pb33f/harific/releases/download/v0.0.6/harific_0.0.6_linux_arm64.tar.gz"
+        sha256 "59a36605e45b9025d78fc0df8a6ee0a3df7837a6aa403cc0d420234371435fbb"
 
         def install
           bin.install "harific"
